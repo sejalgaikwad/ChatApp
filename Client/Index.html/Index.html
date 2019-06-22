@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+      <title>Chat App</title>
+    
+
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+     -->
+        
+        <script src="../app.js/app.js"></script> 
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+        <script src="../controller/loginController.js"></script>
+        <script src="../controller/registerController.js"></script>
+        <script src="../controller/forgotPasswordController.js"></script> 
+        <script src="../controller/resetPasswordController.js"></script> 
+       
+
+        <script src="../services/registerService.js"></script>
+        <script src="../services/loginService.js"></script>
+        <script src="../services/forgotPasswordService.js"></script>
+        <script src="../services/resetPasswordService.js"></script>
+  
+        <body ng-app="myApp">
+        <ui-view>
+        </ui-view>
+        </body>
+    
+    </html>
