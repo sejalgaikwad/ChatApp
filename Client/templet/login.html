@@ -1,49 +1,31 @@
-<html >
+
+
+<html ng-app="myApp">
 
 <head>
- 
-    <script src="../controller/loginController.js"></script>
-    
     <link href="../css/style.css" rel="stylesheet">
-
 </head>
 
-<body ng-controller="loginController">
-    <section id=main>
-        <article>
-            <main>
-                
-                <form name="myForm" ng-controller="loginController">
-                    <h2><b>Username</b></h2>
-                    <input type="text" name="email" ng-model="email" placeholder="Enter Username" autocomplete="on"
-                        required>
-                    <h2><b>Password</b></h2>
-                    <input type="password" name="password" ng-model="password" placeholder="Enter Password"
-                        minlength="8" autocomplete="on" title="Must contain  at least 8 or more characters" required>
+<body>
+        <form>
+                <h2><b>Email</b></h2>
+                <input type="text" name="email" ng-model="email" placeholder="Enter Username" autocomplete="on"
+                    required>
 
-                    <button type="submit" value="log In" ng-click="login()" class="login-button">Login</button>
-                    <!-- <button type="button" class="registerbutton" value="register" ng-click="register" id="calling">Register</button> -->
-                    <div class="butt">
-                        <p>Click on register to create a new account <br><br>
-                            <a href="http://localhost:3000/#!/register">Register</a><br>
+                <h2><b>Password</b></h2>
+                <input type="password" name="password" ng-model="password" placeholder="Enter Password"
+                    minlength="8" autocomplete="on" title="Must contain  at least 8 or more characters" required>
 
-                            <label>
-                                <span ui-sref="forgotPassword">
-                                  <a href="http://localhost:3000/#!/forgotPassword">Forgot password</a>
-                                </span>
-                           </label>
-                        </p>
-                    </div>
-                </form>
-            </main>
-            
-
-        </article>
-    </section>
+                <button type="submit" value="log In" ng-click="login()" class="login-button">Login</button>
+               
+                <div class="butt">
+                    <p> Click on register to create a new account <br><br>
+                        <a href="http://localhost:3000/#!/register">Register</a><br>
+                        <a href="http://localhost:3000/#!/forgotPassword">Forgotpassword</a>
+                       
+                    </p>
+                </div>    
+        </form>        
 </body>
 
 </html>
-
-
-
-

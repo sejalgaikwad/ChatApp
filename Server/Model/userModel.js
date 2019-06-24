@@ -68,7 +68,7 @@ usermodel.prototype.register = (body, callback) =>
                 "email": body.email,
                 "password": hash(body.password)
             });
-            newUser.save((err, result) => 
+            newUser.save((err, data) => 
             {
                 if (err) 
                 {
@@ -76,7 +76,7 @@ usermodel.prototype.register = (body, callback) =>
                 } 
                 else 
                 {
-                    callback(null, result);
+                    callback(null, data);
                 }
             })
         }

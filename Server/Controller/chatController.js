@@ -19,7 +19,7 @@ try {
     }
 }
 catch (err) {
-    console.log("ERROR : in chat controll",err);
+    console.log("ERROR : in chat controller",err);
 
 }
 
@@ -43,6 +43,6 @@ try {
     }
 }
 catch (err) {
-    console.log("ERROR : in chat controll",err);
+    console.log("ERROR : in chat controller",err);
 
 }
