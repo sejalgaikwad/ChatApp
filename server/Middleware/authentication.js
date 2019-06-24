@@ -1,6 +1,6 @@
 
 var jwt = require('jsonwebtoken');
-var secret = "qwerty";
+var secret = "abcdefgh";
 try{
 var auth = function (req, res, next) {
     console.log("In auth");

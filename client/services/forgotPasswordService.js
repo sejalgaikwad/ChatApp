@@ -9,8 +9,8 @@ app.service('forgotPasswordService', function ($http, $location)
         }).then(function successCallback(response) 
               {
                 console.log("forgotPassword successfully ");
-                var userid = response.data.message[0]._id;
-                var name = response.data.message[0].firstname;
+                var userid = response.data._id;
+                var name = response.data.firstname;
                 var token = response.data.token;
                 localStorage.setItem("userid", userid);
                 localStorage.setItem("name", name);

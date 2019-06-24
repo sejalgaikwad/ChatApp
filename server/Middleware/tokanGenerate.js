@@ -7,7 +7,7 @@ module.exports =
         const obj = 
         {
             success: true,
-            message: 'Token Generated ',
+            message: 'Token Generated',
             token: token
         }
         return obj;

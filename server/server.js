@@ -1,6 +1,6 @@
 
 
-const http = require('http');
+//const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -17,10 +17,10 @@ app.use(bodyParser.urlencoded({ extended: true })); //basically tells the system
 //or complex algorithm for deep parsing that can deal with nested objects (i.e. true).
 
 app.use(bodyParser.json()); //basically tells the system that you want json to be used
-app.use(express.static('../Client'));
+app.use(express.static('../client'));
 
 
-var server=app.listen(3000, () => {
+app.listen(3000, () => {
     console.log('server is running on port 3000');
 });
 

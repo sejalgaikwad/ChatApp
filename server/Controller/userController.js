@@ -57,7 +57,7 @@ module.exports.login = (req, res) =>
 
     req.checkBody('password', 'password is not valid').isLength({ min: 8 });
 
-    var secret = "qwerty";
+    var secret = "abcdefgh";
 
     var errors = req.validationErrors();
 
